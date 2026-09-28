@@ -1,0 +1,430 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:#00a8e8;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    font-size:32px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:90vh;
+    background:url("../images/travel.jpg") no-repeat center center;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text{
+    background:rgba(0,0,0,.35);
+    padding:40px;
+    border-radius:12px;
+}
+
+.hero-text h2{
+    color:#fff;
+    font-size:55px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero-text p{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e67e00;
+}
+
+/* ===========================
+   HOME SECTION
+=========================== */
+
+.about-home{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.about-home h2{
+    color:#0077b6;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.feature-box{
+    width:280px;
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.feature-box:hover{
+    transform:translateY(-8px);
+}
+
+.feature-box img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.feature-box h3{
+    color:#0077b6;
+    margin:15px 0;
+}
+/* ===========================
+   BOOKING FORM
+=========================== */
+
+form{
+    width:550px;
+    max-width:90%;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form button{
+    width:100%;
+    padding:14px;
+    background:#00a8e8;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#0077b6;
+}
+
+/* ===========================
+   CONTACT CARD
+=========================== */
+
+.contact-box{
+    width:550px;
+    max-width:90%;
+    margin:30px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.contact-box h3{
+    color:#0077b6;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    margin:10px 0;
+    font-size:17px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    font-size:16px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero{
+    height:70vh;
+}
+
+.hero-text{
+    padding:20px;
+}
+
+.hero-text h2{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+.about-home h2{
+    font-size:32px;
+}
+
+.features{
+    flex-direction:column;
+    align-items:center;
+}
+
+.feature-box{
+    width:90%;
+}
+
+form{
+    width:95%;
+}
+
+.contact-box{
+    width:95%;
+}
+
+}
+/* ===========================
+   EXTRA CARD EFFECTS
+=========================== */
+
+.feature-box img{
+    transition:0.4s;
+}
+
+.feature-box:hover img{
+    transform:scale(1.05);
+}
+
+.feature-box p{
+    margin-top:10px;
+    font-size:16px;
+    color:#555;
+}
+
+/* ===========================
+   PACKAGE BUTTONS
+=========================== */
+
+.feature-box .btn{
+    margin-top:15px;
+}
+
+/* ===========================
+   SMOOTH SCROLL
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   INPUT FOCUS
+=========================== */
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border:2px solid #00a8e8;
+    box-shadow:0 0 8px rgba(0,168,232,.3);
+}
+
+/* ===========================
+   IMAGE RADIUS
+=========================== */
+
+img{
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,h2,h3{
+    font-weight:bold;
+}
+
+p{
+    font-size:17px;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+    transition:0.3s;
+}
+
+/* ===========================
+   END
+=========================== */
+.about-home{
+    width:80%;
+    margin:50px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-home h2{
+    text-align:center;
+    color:#00a8e8;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.about-home h3{
+    color:#0077b6;
+    margin-top:30px;
+}
+
+.about-home p{
+    font-size:18px;
+    line-height:1.8;
+    margin:15px 0;
+    color:#555;
+}
+
+.about-list{
+    margin-top:20px;
+    padding-left:25px;
+}
+
+.about-list li{
+    margin:10px 0;
+    font-size:18px;
+}
+.tips-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.tips-image{
+    flex:1;
+}
+
+.tips-image img{
+    width:100%;
+    border-radius:15px;
+}
+
+.tips-content{
+    flex:1;
+}
+
+.tips-content h2{
+    color:#0099cc;
+    margin-bottom:20px;
+}
+
+.tips-content p{
+    font-size:18px;
+    margin:12px 0;
+}
